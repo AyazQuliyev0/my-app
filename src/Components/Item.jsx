@@ -47,27 +47,27 @@ const Item = () => {
                 onChange={takeItem}
                 value={product.itemName}
                 type="text"
-                placeholder="Название"
+                placeholder="Name"
                 name="itemName"
             />
             <input
                 onChange={takeItem}
                 value={product.itemPrice}
                 type="text"
-                placeholder="Цена"
+                placeholder="Price"
                 name="itemPrice"
             />
             <input
                 onChange={takeItem}
                 value={product.itemImg}
                 type="text"
-                placeholder="Изображение (URL)"
+                placeholder="img"
                 name="itemImg"
             />
             <button onClick={showItem}>add Item</button>
             <button onClick={orderItem}>sort Item</button>
 
-            <input onChange={searchItem} type="text" placeholder="Поиск товара" />
+            <input onChange={searchItem} type="text" placeholder="Search" />
 
             <div className="all">
                 {productExists ? (
